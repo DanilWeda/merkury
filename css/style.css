@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+.header {
+  font-family: Roboto;
+  background-image: url(../img/Prosto.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 2000px;
+  color: #fff;
+}
+
+.header .container {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 150px 120px 80px 80px 150px 630px;
+      grid-template-rows: 150px 120px 80px 80px 150px 630px;
+      grid-template-areas: 'logo . nav' '. title .' '. subtitle .' '. get-started .' '. screen .';
+  max-width: 1700px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  background-image: url(../img/Logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 240px;
+  height: 50px;
+  -ms-grid-column-align: started;
+      justify-self: started;
+}
+
+.header .nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: nav;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[5];
+      grid-template-columns: repeat(5, auto);
+  gap: 50px;
+  text-decoration: none;
+  list-style-type: none;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.header .nav .pages {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header .nav-login {
+  text-decoration: none;
+  color: #5584ff;
+  border: 1px solid #233a72;
+  padding: 10px 50px;
+  border-radius: 30px;
+}
+
+.header .title {
+  font-size: 60pt;
+  font-weight: 100;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: title;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.header .subtitle {
+  font-size: 36pt;
+  font-weight: 400;
+  color: #8492af;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: subtitle;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.header .get-start {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: get-started;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  color: #fff;
+  text-decoration: none;
+  background-color: #5584ff;
+  border: 1px solid #5584ff;
+  padding: 10px 50px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.header .screen {
+  background-image: url(../img/Merkury-home.png);
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: screen;
+  -ms-grid-row: 6;
+  grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  background-repeat: no-repeat;
+  background-position: 50% 200%;
+  background-size: 95%;
+  width: 1054px;
+  height: 763px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+/*# sourceMappingURL=style.css.map */
