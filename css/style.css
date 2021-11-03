@@ -14,14 +14,14 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 150px 120px 80px 80px 150px 630px;
-      grid-template-rows: 150px 120px 80px 80px 150px 630px;
-      grid-template-areas: 'logo . nav' '. title .' '. subtitle .' '. get-started .' '. screen .';
+  grid-template-rows: 150px 120px 80px 80px 150px 630px;
+  grid-template-areas: "logo . nav" ". title ." ". subtitle ." ". get-started ." ". screen .";
   max-width: 1700px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header .logo {
@@ -34,7 +34,7 @@
   width: 240px;
   height: 50px;
   -ms-grid-column-align: started;
-      justify-self: started;
+  justify-self: started;
 }
 
 .header .nav {
@@ -43,13 +43,13 @@
   grid-area: nav;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
+  -ms-grid-columns: (auto) [5];
+  grid-template-columns: repeat(5, auto);
   gap: 50px;
   text-decoration: none;
   list-style-type: none;
   -ms-grid-column-align: end;
-      justify-self: end;
+  justify-self: end;
 }
 
 .header .nav .pages {
@@ -72,7 +72,7 @@
   -ms-grid-column: 2;
   grid-area: title;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -93,7 +93,7 @@
   -ms-grid-row: 4;
   grid-row: 4;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 
 .header .get-start {
@@ -101,7 +101,7 @@
   -ms-grid-column: 2;
   grid-area: get-started;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
@@ -132,6 +132,6 @@
   width: 1054px;
   height: 763px;
   -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
 }
 /*# sourceMappingURL=style.css.map */
