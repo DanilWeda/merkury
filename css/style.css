@@ -72,15 +72,11 @@ body {
 .header .title {
   font-size: 60pt;
   font-weight: 100;
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: title;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  grid-area: title;
+      justify-self: center;
   grid-column: 1/4;
-  -ms-grid-row: 3;
   grid-row: 3;
 }
 
@@ -88,15 +84,11 @@ body {
   font-size: 36pt;
   font-weight: 400;
   color: #8492af;
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: subtitle;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  grid-area: subtitle;
   grid-column: 1/4;
-  -ms-grid-row: 4;
   grid-row: 4;
-  -ms-grid-column-align: center;
       justify-self: center;
 }
 
@@ -266,5 +258,118 @@ body {
       justify-self: end;
   -ms-grid-column-align: start;
       justify-self: start;
+}
+
+.need-section .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 800px;
+      grid-template-columns: 1fr 800px;
+  margin-top: 50px;
+  padding-top: 100px;
+  background: #f6f7fa;
+}
+
+.need-section .container .text {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'title' 'subtitle' 'sub-ready' 'sub-two';
+  -ms-grid-rows: 50px 120px 100px 120px 50px 50px;
+      grid-template-rows: 50px 120px 100px 120px 50px 50px;
+  text-align: left;
+  padding-left: 150px;
+}
+
+.need-section .container .text .title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  font-size: 60pt;
+  font-weight: 100;
+}
+
+.need-section .container .text .subtitle {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subtitle;
+  line-height: 1.5;
+  font-size: 18pt;
+  padding-right: 180px;
+  color: #8492af;
+}
+
+.need-section .container .text .subtitle:nth-child(2) {
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.need-section .container .text .subtitle:nth-child(3) {
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+.need-section .container .text .sub-ready-one {
+  padding-left: 30px;
+  color: #618eff;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: sub-ready;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  position: relative;
+}
+
+.need-section .container .text .sub-ready-one::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/checked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.need-section .container .text .sub-ready-two {
+  padding-left: 30px;
+  color: #618eff;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: sub-two;
+  -ms-grid-row: 6;
+  grid-row: 6;
+  position: relative;
+}
+
+.need-section .container .text .sub-ready-two::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/checked.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.need-section .container .need-img {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  background-image: url(../img/Need.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -30px 50px;
+  width: 800px;
+  height: 600px;
 }
 /*# sourceMappingURL=style.css.map */
