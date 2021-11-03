@@ -192,3 +192,90 @@ body {
     justify-self: start;
   }
 }
+
+.need-section {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 800px;
+    margin-top: 50px;
+    padding-top: 100px;
+    background: #f6f7fa;
+    .text {
+      display: grid;
+      grid-template-areas: 'title' 'subtitle' 'sub-ready' 'sub-two';
+      grid-template-rows: 50px 120px 100px 120px 50px 50px;
+      text-align: left;
+      padding-left: 150px;
+      .title {
+        grid-area: title;
+        grid-row: 1;
+        font-size: 60pt;
+        font-weight: 100;
+      }
+      .subtitle {
+        grid-area: subtitle;
+
+        line-height: 1.5;
+        font-size: 18pt;
+        padding-right: 180px;
+        color: #8492af;
+      }
+      .subtitle:nth-child(2) {
+        grid-row: 3;
+      }
+      .subtitle:nth-child(3) {
+        grid-row: 4;
+      }
+      .sub-ready-one {
+        padding-left: 30px;
+        color: #618eff;
+        grid-area: sub-ready;
+        grid-row: 5;
+        position: relative;
+      }
+      .sub-ready-one::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/checked.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+      .sub-ready-two {
+        padding-left: 30px;
+        color: #618eff;
+        grid-area: sub-two;
+        grid-row: 6;
+        position: relative;
+      }
+
+      .sub-ready-two::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/checked.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    }
+    .need-img {
+      justify-self: end;
+      background-image: url(../img/Need.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: -30px 50px;
+      width: 800px;
+      height: 600px;
+    }
+  }
+}
