@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 .header {
   font-family: Roboto;
@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px 120px 80px 80px 150px 630px;
-    grid-template-areas: 'logo . nav' '. title .' '. subtitle .' '. get-started .' '. screen .';
+    grid-template-areas: "logo . nav" ". title ." ". subtitle ." ". get-started ." ". screen .";
     max-width: 1700px;
     align-items: center;
   }
