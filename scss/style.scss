@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+body {
+  font-family: Roboto;
+}
 .header {
   font-family: Roboto;
   background-image: url(../img/Prosto.png);
@@ -13,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 150px 120px 80px 80px 150px 630px;
-    grid-template-areas: "logo . nav" ". title ." ". subtitle ." ". get-started ." ". screen .";
+    grid-template-areas: 'logo . nav' '. title .' '. subtitle .' '. get-started .' '. screen .';
     max-width: 1700px;
     align-items: center;
   }
@@ -87,5 +89,106 @@
     width: 1054px;
     height: 763px;
     justify-self: center;
+  }
+}
+
+.icon-section {
+  .container {
+    display: grid;
+    grid-template-areas: 'left center right';
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1700px;
+  }
+  .img-item {
+    margin-top: 200px;
+    grid-template-rows: 800px 100px 100px 150px;
+    align-items: center;
+    background-position: 50% 60%;
+
+    .title {
+      font-size: 24pt;
+      font-weight: 700;
+      text-align: center;
+      grid-row: 2;
+    }
+    .subtitle {
+      line-height: 1.5;
+      font-size: 18pt;
+      text-align: center;
+      grid-row: 3;
+      padding: 2px 30px;
+      color: #8492af;
+    }
+    .see-more {
+      display: block;
+      margin: 0 auto;
+      width: 250px;
+      text-align: center;
+      grid-row: 4;
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+      border: 1px solid #dadee7;
+      padding: 15px 0;
+      border-radius: 30px;
+    }
+  }
+
+  .img-item:nth-child(1) {
+    display: grid;
+    grid-area: left;
+    background-image: url(../img/Manage_first.png);
+    background-repeat: no-repeat;
+
+    background-size: 20%;
+
+    justify-self: end;
+    .title {
+      grid-row: 2;
+    }
+  }
+  .img-item:nth-child(2) {
+    display: grid;
+    grid-area: center;
+    background-image: url(../img/Manage_sec.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    grid-template-rows: 4;
+    justify-self: center;
+    position: relative;
+  }
+
+  .img-item:nth-child(2)::after {
+    content: '';
+    width: 220px;
+    height: 2px;
+    background-color: #dadee7;
+    position: absolute;
+    top: 60%;
+    left: -20%;
+  }
+
+  .img-item:nth-child(2)::before {
+    content: '';
+    width: 220px;
+    height: 2px;
+    background-color: #dadee7;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+  }
+
+  .img-item:nth-child(3) {
+    display: grid;
+    grid-area: right;
+    background-image: url(../img/Manage_thr.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    grid-template-rows: 4;
+    justify-self: end;
+    justify-self: start;
   }
 }
