@@ -99,8 +99,7 @@ body {
     grid-template-rows: 200px 200px 200px 200px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    margin: 0 auto;
-    max-width: 1700px;
+    width: 100%;
   }
   .img-item {
     margin-top: 200px;
@@ -145,7 +144,6 @@ body {
 
     background-size: 20%;
 
-    justify-self: end;
     .title {
       grid-row: 2;
     }
@@ -157,7 +155,6 @@ body {
     background-repeat: no-repeat;
     background-size: 20%;
     grid-template-rows: 4;
-    justify-self: center;
     position: relative;
   }
 
@@ -188,7 +185,6 @@ body {
     background-repeat: no-repeat;
     background-size: 20%;
     grid-template-rows: 4;
-    justify-self: end;
     justify-self: start;
   }
 }
@@ -214,7 +210,6 @@ body {
       }
       .subtitle {
         grid-area: subtitle;
-
         line-height: 1.5;
         font-size: 18pt;
         padding-right: 180px;
@@ -276,6 +271,164 @@ body {
       background-position: -30px 50px;
       width: 800px;
       height: 600px;
+    }
+  }
+}
+
+.drag-drop {
+  background-image: url(../img/Prosto.png);
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 700px;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #fff;
+    padding-top: 100px;
+    .in-progres {
+      align-items: center;
+      justify-self: end;
+      .title-text {
+        font-weight: 500;
+        font-size: 16pt;
+      }
+      .title-text::after {
+        content: '(3)';
+        padding-left: 10px;
+        opacity: 0.5;
+      }
+
+      .img {
+        background-image: url(../img/drag.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+        width: 400px;
+        height: 100px;
+      }
+    }
+    .completed {
+      align-items: center;
+      justify-self: start;
+      .title-text {
+        font-weight: 500;
+        font-size: 16pt;
+        position: relative;
+      }
+      .title-text::after {
+        content: '(2)';
+        padding-left: 10px;
+        opacity: 0.5;
+      }
+      .title-text::before {
+        content: '';
+        border: solid #fff;
+        border-width: 0 1px 1px 0;
+        padding: 5px;
+        display: inline-block;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        position: absolute;
+        top: 5px;
+        left: -120px;
+      }
+      .img {
+        background-image: url(../img/drag.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+        width: 400px;
+        height: 100px;
+      }
+      .img-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px dashed #fff;
+        margin-bottom: 20px;
+        width: 400px;
+        height: 100px;
+        opacity: 0.5;
+      }
+    }
+    .img:nth-child(4) {
+      background-position: 50px 20px;
+      width: 500px;
+      height: 120px;
+      position: relative;
+    }
+    .img:nth-child(4)::after {
+      content: '';
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 78%;
+      right: 8%;
+      background-image: url(../img/drag_ic.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-color: rgba(255, 255, 255, 0.062);
+      border-radius: 50%;
+    }
+    .img:nth-child(4)::before {
+      content: '';
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      top: 70%;
+      right: 6%;
+      background-color: rgba(255, 255, 255, 0.123);
+      border-radius: 50%;
+    }
+    .text {
+      .title {
+        font-weight: 100;
+        font-size: 40pt;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+      }
+      .subtitle {
+        font-weight: 300;
+        padding-right: 200px;
+      }
+      .subtitle:nth-child(2) {
+        align-items: center;
+        position: relative;
+      }
+      .subtitle:nth-child(2)::before {
+        content: '';
+        background-image: url(../img/ic.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        transform: rotate(90deg);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 150%;
+        left: 0px;
+        border: 1px #fff solid;
+        border-radius: 50%;
+      }
+      .subtitle:nth-child(2)::after {
+        content: '';
+        background-image: url(../img/ic.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 15px;
+        transform: rotate(-90deg);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 150%;
+        left: 50px;
+        border: 1px #fff solid;
+        border-radius: 50%;
+      }
     }
   }
 }
