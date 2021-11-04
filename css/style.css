@@ -72,7 +72,11 @@ body {
 .header .title {
   font-size: 60pt;
   font-weight: 100;
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: title;
+  -ms-grid-column-align: center;
+   justify-self: center;
   -ms-grid-column: 1;
   grid-area: title;
       justify-self: center;
@@ -89,7 +93,7 @@ body {
   grid-area: subtitle;
   grid-column: 1/4;
   grid-row: 4;
-      justify-self: center;
+  justify-self: center;
 }
 
 .header .get-start {
@@ -142,7 +146,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 1700px;
 }
 
 .icon-section .img-item {
@@ -197,6 +202,8 @@ body {
   background-image: url(../img/Manage_first.png);
   background-repeat: no-repeat;
   background-size: 20%;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .icon-section .img-item:nth-child(1) .title {
@@ -249,6 +256,7 @@ body {
   background-size: 20%;
   -ms-grid-rows: 4;
       grid-template-rows: 4;
+
   -ms-grid-column-align: start;
       justify-self: start;
 }
@@ -559,5 +567,6 @@ body {
   left: 50px;
   border: 1px #fff solid;
   border-radius: 50%;
+
 }
 /*# sourceMappingURL=style.css.map */

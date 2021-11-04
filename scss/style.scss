@@ -99,7 +99,9 @@ body {
     grid-template-rows: 200px 200px 200px 200px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    width: 100%;
+    margin: 0 auto;
+    max-width: 1700px;
+
   }
   .img-item {
     margin-top: 200px;
@@ -141,8 +143,8 @@ body {
     grid-area: left;
     background-image: url(../img/Manage_first.png);
     background-repeat: no-repeat;
-
     background-size: 20%;
+    justify-self: end;
 
     .title {
       grid-row: 2;
@@ -155,6 +157,7 @@ body {
     background-repeat: no-repeat;
     background-size: 20%;
     grid-template-rows: 4;
+    justify-self: center;
     position: relative;
   }
 
