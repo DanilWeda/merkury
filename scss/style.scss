@@ -99,13 +99,9 @@ body {
     grid-template-rows: 200px 200px 200px 200px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-<<<<<<< HEAD
-    width: 100%;
-=======
     margin: 0 auto;
     max-width: 1700px;
 
->>>>>>> c26042dfbc756fab97569f370df33b4566782ec1
   }
   .img-item {
     margin-top: 200px;
@@ -148,10 +144,7 @@ body {
     background-image: url(../img/Manage_first.png);
     background-repeat: no-repeat;
     background-size: 20%;
-<<<<<<< HEAD
-=======
     justify-self: end;
->>>>>>> c26042dfbc756fab97569f370df33b4566782ec1
 
     .title {
       grid-row: 2;

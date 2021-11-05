@@ -75,13 +75,10 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
-<<<<<<< HEAD
-=======
   -ms-grid-column-align: center;
    justify-self: center;
   -ms-grid-column: 1;
   grid-area: title;
->>>>>>> c26042dfbc756fab97569f370df33b4566782ec1
       justify-self: center;
   grid-column: 1/4;
   grid-row: 3;
@@ -96,11 +93,7 @@ body {
   grid-area: subtitle;
   grid-column: 1/4;
   grid-row: 4;
-<<<<<<< HEAD
       justify-self: center;
-=======
-  justify-self: center;
->>>>>>> c26042dfbc756fab97569f370df33b4566782ec1
 }
 
 .header .get-start {
@@ -260,10 +253,6 @@ body {
   background-size: 20%;
   -ms-grid-rows: 4;
       grid-template-rows: 4;
-<<<<<<< HEAD
-=======
-
->>>>>>> c26042dfbc756fab97569f370df33b4566782ec1
   -ms-grid-column-align: start;
       justify-self: start;
 }
@@ -574,9 +563,5 @@ body {
   left: 50px;
   border: 1px #fff solid;
   border-radius: 50%;
-<<<<<<< HEAD
-=======
-
->>>>>>> c26042dfbc756fab97569f370df33b4566782ec1
 }
 /*# sourceMappingURL=style.css.map */
